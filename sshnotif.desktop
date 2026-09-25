@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Name=SSH Notif
+Comment=Notify on SSH logins
+Icon=sshnotif
+Exec=sshnotif
+
+[X-Sailjail]
+Sandboxing=Disabled

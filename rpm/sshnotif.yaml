@@ -1,0 +1,30 @@
+Name: sshnotif
+Summary: Notify on SSH logins
+Version: 0.1
+Release: 3
+Group: Applications/System
+License: GPLv3
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: |
+  Sends a notification when someone SSHs into the device.
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+- sailfishapp
+- Qt5Quick
+- Qt5Qml
+- Qt5Core
+- Qt5DBus
+Requires:
+- mapplauncherd-booster-silica-qt5
+- sailfishsilica-qt5
+- nemo-qml-plugin-notifications-qt5
+Files:
+- '%{_datadir}/applications/%{name}.desktop'
+- '%{_datadir}/icons/hicolor/*/apps/%{name}.png'
+- '%{_datadir}/%{name}/qml'
+- '%{_bindir}'
+- '%attr(755,root,root) %{_libexecdir}/%{name}/pam-hook'
+- '%attr(4755,root,root) %{_libexecdir}/%{name}/pam-setup'
+- '%{_datadir}/dbus-1/services/org.sshnotif.service'

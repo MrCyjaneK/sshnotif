@@ -1,0 +1,12 @@
+*.rpm
+*.pro.user
+*.o
+*.list
+pam-setup
+pam-hook
+helper/pam-hook
+sshnotif
+moc_*.cpp
+Makefile
+.DS_Store
+.gocache

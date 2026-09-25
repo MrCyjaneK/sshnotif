@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.sshnotif
+Exec=/usr/bin/invoker --type=silica-qt5 -s -F /usr/share/applications/sshnotif.desktop /usr/bin/sshnotif
